@@ -1,24 +1,50 @@
-# README
+##usersテーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column                 | Type          | Options                            |
+| ---------------------- | ------------- | ---------------------------------- |
+| nick_name              | string        | null: false, unique: true          |
+| email                  | string        | null: false                        |
+| password               | string        | null: false                        |
+| confirm_password       | string        | null: false                        |
+| double_byte_name       | string        | null: false                        |
+| double_byte_name_kana  | string        | null: false                        |
+| date_of_birth          | string        | null: false                        |
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+##itemテーブル
 
-* Configuration
+| Column                 | Type          | Options                            |
+| ---------------------- | ------------- | ---------------------------------- |
+| user                   | references    | null: false, foreign_key: true     |
+| category               | references    | null: false                        |
+| Item_condition         | string        | null: false                        |
+| shipping_cost          | string        | null: false                        |
+| area_of_origin         | string        | null: false                        |
+| estimated_shipping_date| string        | null: false                        |
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+##buyテーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+| Column                 | Type          | Options                            |
+| ---------------------- | ------------- | ---------------------------------- |
+| user                   | references    | null: false                        |
+| address                | references    | null: false                        |
 
-* Deployment instructions
 
-* ...
+
+##addressesテーブル
+
+| Column                 | Type          | Options                            |
+| ---------------------- | ------------- | ---------------------------------- |
+| municipality           | string        | null: false                        |
+| prototype              | string        | null: false                        |
+| address                | string        | null: false                        |
+| post_code              | string        | null: false                        |
+| telephone_number       | string        | null: false                        |
+| building_name          | string        | null: false                        |
+
+##Association
+belongs_to users
+has_many 
