@@ -60,6 +60,6 @@ has_one address
 | telephone_number       | string        | null: false                        |
 | building_name          | string        |                                    |
 
-##Association
+##Association 
 belongs_to buy
 
