@@ -7,7 +7,7 @@ FactoryBot.define do
     double_byte_first_name_kana{'ヤマダ'}
     double_byte_last_name_kana{'タロウ'}
     date_of_birth{"1999-12-31"}
-    password {Faker::Internet.password(min_length: 6)}
+    password { '1a' + Faker::Internet.password(min_length: 4) }
     password_confirmation {password}
   end
 end
