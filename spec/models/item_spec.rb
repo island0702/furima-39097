@@ -14,6 +14,12 @@ RSpec.describe Item, type: :model do
       end
     end
     context '出品が出来ない場合' do
+      it 'userが紐づいていなければ出品できない' do
+        @item.user = nil
+        @item.valid?
+        expect(@item.errors.full_messages).to include("User must exist")
+      end
+
       it "商品画像が空では登録できない" do
         @item.image = nil
         @item.valid?
@@ -32,26 +38,26 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Detail can't be blank")
       end
 
-      it "カテゴリーの情報が空では登録できない" do
-        @item.category_id = ''
+      it "カテゴリーの情報が[---]では登録できない" do
+        @item.category_id = '---'
         @item.valid?
         expect(@item.errors.full_messages).to include("Category Select")
       end
 
-      it "商品の状態の情報が空では登録できない" do
-        @item.condition_id = ''
+      it "商品の状態の情報が[---]では登録できない" do
+        @item.condition_id = '---'
         @item.valid?
         expect(@item.errors.full_messages).to include("Condition Select")
       end
 
-      it "配送料の負担の情報が空では登録できない" do
-        @item.shipping_cost_id = ''
+      it "配送料の負担の情報が[---]では登録できない" do
+        @item.shipping_cost_id = '---'
         @item.valid?
         expect(@item.errors.full_messages).to include("Shipping cost Select")
       end
 
-      it "発送元の地域の情報が空では登録できない" do
-        @item.area_of_origin_id = ''
+      it "発送元の地域の情報が[---]では登録できない" do
+        @item.area_of_origin_id = '---'
         @item.valid?
         expect(@item.errors.full_messages).to include("Area of origin Select")
       end
@@ -59,7 +65,7 @@ RSpec.describe Item, type: :model do
       it "価格の情報が空では登録できない" do
         @item.selling_price = ''
         @item.valid?
-        expect(@item.errors.full_messages).to include("Selling price can't be blank ", "Selling price is invalid", "Selling price is not a number")
+        expect(@item.errors.full_messages).to include("Selling price is not a number")
       end
 
       it "価格は、¥300~¥9,999,999の間のみ保存可能であること" do
@@ -68,14 +74,20 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Selling price must be greater than or equal to 300")
       end
 
+      it "価格は、¥300~¥9,999,999の間のみ保存可能であること" do
+        @item.selling_price = '99999999'
+        @item.valid?
+        expect(@item.errors.full_messages).to include("Selling price must be less than or equal to 9999999")
+      end
+
       it "価格は半角数値のみ保存可能であること" do
         @item.selling_price = '３００'
         @item.valid?
         expect(@item.errors.full_messages).to include("Selling price is not a number")
       end
 
-      it "発送までの日数の情報が空では登録できない" do
-        @item.estimated_sipping_date_id = ''
+      it "発送までの日数の情報が[---]では登録できない" do
+        @item.estimated_sipping_date_id = '---'
         @item.valid?
         expect(@item.errors.full_messages).to include("Estimated sipping date Select")
       end
