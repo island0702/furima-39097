@@ -87,7 +87,7 @@ RSpec.describe Item, type: :model do
       end
 
       it "発送までの日数の情報が[---]では登録できない" do
-        @item.estimated_sipping_date_id = '---'
+        @item.estimated_sipping_date_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include("Estimated sipping date Select")
       end
