@@ -40,23 +40,22 @@ class ItemsController < ApplicationController
 
   private
 
-  def item_params
-    params.require(:item).permit(
-      :name,
-      :detail,
-      :area_of_origin_id,
-      :category_id,
-      :estimated_sipping_date_id,
-      :selling_price,
-      :condition_id,
-      :shipping_cost_id,
-      :image
-    ).merge(user_id: current_user.id)
-  end
-end
+    def item_params
+      params.require(:item).permit(
+        :name,
+        :detail,
+        :area_of_origin_id,
+        :category_id,
+        :estimated_sipping_date_id,
+        :selling_price,
+        :condition_id,
+        :shipping_cost_id,
+        :image
+      ).merge(user_id: current_user.id)
+    end
 
     def set_item
-      @item.Item.find(:params[:id])
+      @item = Item.find(params[:id])
     end
 
     def move_to_index
