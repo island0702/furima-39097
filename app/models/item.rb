@@ -7,6 +7,7 @@ class Item < ApplicationRecord
   belongs_to :estimated_sipping_date
   belongs_to :user
   has_one_attached :image
+  has_one :buy
 
   validates :image,                         presence: true
   validates :name,                          presence: true

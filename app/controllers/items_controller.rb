@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show ]
-  before_action :set_item, only: [:edit, :show, :update, :destroy] 
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :set_item, only: [:edit, :show, :update, :destroy]
   before_action :move_to_index, only: [:edit, :destroy]
 
   def index
@@ -13,7 +13,6 @@ class ItemsController < ApplicationController
 
   def edit
   end
-
 
   def create
     @item = Item.new(item_params)
@@ -36,34 +35,33 @@ class ItemsController < ApplicationController
   end
 
   def destroy
-      @item.destroy
-      redirect_to root_path
+    @item.destroy
+    redirect_to root_path
   end
-   
 
   private
 
-    def item_params
-      params.require(:item).permit(
-        :name,
-        :detail,
-        :area_of_origin_id,
-        :category_id,
-        :estimated_sipping_date_id,
-        :selling_price,
-        :condition_id,
-        :shipping_cost_id,
-        :image
-      ).merge(user_id: current_user.id)
-    end
+  def item_params
+    params.require(:item).permit(
+      :name,
+      :detail,
+      :area_of_origin_id,
+      :category_id,
+      :estimated_sipping_date_id,
+      :selling_price,
+      :condition_id,
+      :shipping_cost_id,
+      :image
+    ).merge(user_id: current_user.id)
+  end
 
-    def set_item
-      @item = Item.find(params[:id])
-    end
+  def set_item
+    @item = Item.find(params[:id])
+  end
 
-    def move_to_index
-      if current_user.id != @item.user_id  
-        redirect_to action: :index
-    end
+  def move_to_index
+    return unless current_user.id != @item.user_id || @item.buy.present?
+
+    redirect_to action: :index
   end
 end
