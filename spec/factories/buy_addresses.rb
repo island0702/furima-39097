@@ -5,7 +5,6 @@ FactoryBot.define do
     post_code { '111-1111' }
     telephone_number { '09011111111' }
     area_of_origin_id { 2 }
-    association :user, :item
     token {"tok_abcdefghijk00000000000000000"}
   end
 end
