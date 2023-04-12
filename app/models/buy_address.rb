@@ -17,7 +17,7 @@ class BuyAddress
     validates :post_code, format: { with: /\A[0-9]{3}-[0-9]{4}\z/ }
     validates :address
     validates :telephone_number, format: { with: /\A[0-9]{10,11}\z/ }
-    validates :area_of_origin_id, numericality: { other_than: 1, message: 'Select' }
+    validates :area_of_origin_id, numericality: { other_than: 1, message: '選択' }
     validates :token
   end
 

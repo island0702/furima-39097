@@ -12,14 +12,14 @@ class Item < ApplicationRecord
   validates :image,                         presence: true
   validates :name,                          presence: true
   validates :detail,                        presence: true
-  validates :category_id,                   numericality: { other_than: 1, message: 'Select' }
-  validates :condition_id,                  numericality: { other_than: 1, message: 'Select' }
-  validates :shipping_cost_id,              numericality: { other_than: 1, message: 'Select' }
-  validates :area_of_origin_id,             numericality: { other_than: 1, message: 'Select' }
-  validates :estimated_sipping_date_id,     numericality: { other_than: 1, message: 'Select' }
+  validates :category_id,                   numericality: { other_than: 1, message: '選択' }
+  validates :condition_id,                  numericality: { other_than: 1, message: '選択' }
+  validates :shipping_cost_id,              numericality: { other_than: 1, message: '選択' }
+  validates :area_of_origin_id,             numericality: { other_than: 1, message: '選択' }
+  validates :estimated_sipping_date_id,     numericality: { other_than: 1, message: '選択' }
 
   with_options presence: true do
     validates :selling_price, numericality: { only_integer: true, greater_than_or_equal_to: 300, less_than_or_equal_to: 9_999_999 },
-                              presence: { message: 'Please enter within the range of values' }
+                              presence: { message: '数値の範囲内で入力してください' }
   end
 end
