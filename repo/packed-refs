@@ -1,0 +1,11 @@
+# pack-refs with: peeled fully-peeled sorted 
+b95ab0b7715942223ce12be94be07603af244242 refs/heads/BD設計
+b321359521a3e6662561d16b8459ebf520f36c8a refs/heads/master
+a04fc76112be883644afa76d4f48a3c5de0c63a2 refs/pull/12/head
+689b91296f4e0e8d8ebec2d7c1336f40e7bca75d refs/pull/13/head
+e767dcb76af9e436de5a4932054a28cc39457cda refs/pull/14/head
+66630069bbb96bc0caa563d660845fc94ebb5b56 refs/pull/15/head
+4ef1940d1a3201bdb34bc90efeb2748fd24b1901 refs/pull/16/head
+9fa7dc9ccfe46e1fb9cb9c079797755123e1961c refs/pull/17/head
+f57e92d841cc32a06eab9096f4591e00c6ce7722 refs/pull/18/head
+6820ee75209cf838d58e1c3532c35c165cc29e8c refs/pull/19/head

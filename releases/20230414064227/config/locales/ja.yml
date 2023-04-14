@@ -1,0 +1,34 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        nickname: ニックネーム
+        double_byte_first_name: お名前
+        double_byte_last_name: お名前
+        double_byte_first_name_kana: オナマエ
+        double_byte_last_name_kana: オナマエ
+        date_of_birth: 生年月日
+      item:
+        user: ユーザー
+        category_id: カテゴリー
+        condition_id: 状態
+        shipping_cost_id: 配送料
+        area_of_origin_id: 地域
+        estimated_sipping_date_id: 配送日
+        selling_price: 販売価格
+        name : 商品名
+        detail: 商品説明
+        image: 画像
+        select: 選択
+  activemodel:
+    attributes:
+      buy_address:
+        user: ユーザー
+        item: 商品
+        area_of_origin_id: 都道府県
+        municapality: 市区町村
+        post_code: 郵便番号
+        telephone_number: 電話番号
+        address: 番地
+        token: クレジットカード情報
+        

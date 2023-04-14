@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "origin"]
+	url = git@github.com:island0702/furima-39097.git
+	fetch = +refs/*:refs/*
+	mirror = true

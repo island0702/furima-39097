@@ -1,0 +1,63 @@
+I, [2023-04-14T06:31:47.642096 #8687]  INFO -- : Refreshing Gem list
+I, [2023-04-14T06:31:50.346535 #8687]  INFO -- : listening on addr=/var/www/furima-39097/shared/tmp/sockets/unicorn.sock fd=9
+I, [2023-04-14T06:31:50.351483 #8687]  INFO -- : master process ready
+I, [2023-04-14T06:31:50.356636 #8695]  INFO -- : worker=0 ready
+I, [2023-04-14T06:31:50.544463 #8715]  INFO -- : executing ["/var/www/furima-39097/shared/bundle/ruby/2.6.0/bin/unicorn", "-c", "/var/www/furima-39097/current/config/unicorn.rb", "-E", "deployment", "-D", {9=>#<Kgio::UNIXServer:/var/www/furima-39097/shared/tmp/sockets/unicorn.sock>}] (in /var/www/furima-39097/releases/20230414063107)
+I, [2023-04-14T06:31:50.544566 #8715]  INFO -- : forked child re-executing...
+I, [2023-04-14T06:31:50.873726 #8715]  INFO -- : inherited addr=/var/www/furima-39097/shared/tmp/sockets/unicorn.sock fd=9
+I, [2023-04-14T06:31:50.873953 #8715]  INFO -- : Refreshing Gem list
+I, [2023-04-14T06:31:52.325337 #8715]  INFO -- : master process ready
+I, [2023-04-14T06:31:52.329392 #8773]  INFO -- : worker=0 ready
+I, [2023-04-14T06:31:52.419626 #8687]  INFO -- : reaped #<Process::Status: pid 8695 exit 0> worker=0
+I, [2023-04-14T06:31:52.419723 #8687]  INFO -- : master complete
+I, [2023-04-14T06:43:02.473658 #10000]  INFO -- : executing ["/var/www/furima-39097/shared/bundle/ruby/2.6.0/bin/unicorn", "-c", "/var/www/furima-39097/current/config/unicorn.rb", "-E", "deployment", "-D", {9=>#<Kgio::UNIXServer:fd 9>}] (in /var/www/furima-39097/releases/20230414064227)
+I, [2023-04-14T06:43:02.474508 #10000]  INFO -- : forked child re-executing...
+I, [2023-04-14T06:43:02.840462 #10000]  INFO -- : inherited addr=/var/www/furima-39097/shared/tmp/sockets/unicorn.sock fd=9
+I, [2023-04-14T06:43:02.840698 #10000]  INFO -- : Refreshing Gem list
+I, [2023-04-14T06:43:04.951217 #10000]  INFO -- : master process ready
+I, [2023-04-14T06:43:04.957217 #10059]  INFO -- : worker=0 ready
+I, [2023-04-14T06:43:05.046806 #8715]  INFO -- : reaped #<Process::Status: pid 8773 exit 0> worker=0
+I, [2023-04-14T06:43:05.046945 #8715]  INFO -- : master complete
+I, [2023-04-14T07:06:18.898224 #11324]  INFO -- : executing ["/var/www/furima-39097/shared/bundle/ruby/2.6.0/bin/unicorn", "-c", "/var/www/furima-39097/current/config/unicorn.rb", "-E", "deployment", "-D", {9=>#<Kgio::UNIXServer:fd 9>}] (in /var/www/furima-39097/releases/20230414070542)
+I, [2023-04-14T07:06:18.899380 #11324]  INFO -- : forked child re-executing...
+I, [2023-04-14T07:06:19.256101 #11324]  INFO -- : inherited addr=/var/www/furima-39097/shared/tmp/sockets/unicorn.sock fd=9
+I, [2023-04-14T07:06:19.256337 #11324]  INFO -- : Refreshing Gem list
+I, [2023-04-14T07:06:21.610214 #11324]  INFO -- : master process ready
+I, [2023-04-14T07:06:21.612053 #11383]  INFO -- : worker=0 ready
+I, [2023-04-14T07:06:22.020729 #10000]  INFO -- : reaped #<Process::Status: pid 10059 exit 0> worker=0
+I, [2023-04-14T07:06:22.020850 #10000]  INFO -- : master complete
+I, [2023-04-14T07:08:10.754429 #11324]  INFO -- : reaped #<Process::Status: pid 11383 exit 0> worker=0
+I, [2023-04-14T07:08:10.754567 #11324]  INFO -- : master complete
+I, [2023-04-14T07:09:11.899229 #12187]  INFO -- : Refreshing Gem list
+I, [2023-04-14T07:09:14.093153 #12187]  INFO -- : unlinking existing socket=/var/www/furima-39097/shared/tmp/sockets/unicorn.sock
+I, [2023-04-14T07:09:14.093331 #12187]  INFO -- : listening on addr=/var/www/furima-39097/shared/tmp/sockets/unicorn.sock fd=9
+I, [2023-04-14T07:09:14.098113 #12187]  INFO -- : master process ready
+I, [2023-04-14T07:09:14.103367 #12195]  INFO -- : worker=0 ready
+I, [2023-04-14T07:09:14.292805 #12215]  INFO -- : executing ["/var/www/furima-39097/shared/bundle/ruby/2.6.0/bin/unicorn", "-c", "/var/www/furima-39097/current/config/unicorn.rb", "-E", "deployment", "-D", {9=>#<Kgio::UNIXServer:/var/www/furima-39097/shared/tmp/sockets/unicorn.sock>}] (in /var/www/furima-39097/releases/20230414070836)
+I, [2023-04-14T07:09:14.292908 #12215]  INFO -- : forked child re-executing...
+I, [2023-04-14T07:09:14.617169 #12215]  INFO -- : inherited addr=/var/www/furima-39097/shared/tmp/sockets/unicorn.sock fd=9
+I, [2023-04-14T07:09:14.617417 #12215]  INFO -- : Refreshing Gem list
+I, [2023-04-14T07:09:15.961674 #12215]  INFO -- : master process ready
+I, [2023-04-14T07:09:15.965336 #12273]  INFO -- : worker=0 ready
+I, [2023-04-14T07:09:16.054553 #12187]  INFO -- : reaped #<Process::Status: pid 12195 exit 0> worker=0
+I, [2023-04-14T07:09:16.054644 #12187]  INFO -- : master complete
+I, [2023-04-14T07:18:58.566643 #12215]  INFO -- : reaped #<Process::Status: pid 12273 exit 0> worker=0
+I, [2023-04-14T07:18:58.566782 #12215]  INFO -- : master complete
+I, [2023-04-14T07:19:45.553628 #13097]  INFO -- : Refreshing Gem list
+I, [2023-04-14T07:19:47.423794 #13097]  INFO -- : unlinking existing socket=/var/www/furima-39097/shared/tmp/sockets/unicorn.sock
+I, [2023-04-14T07:19:47.424004 #13097]  INFO -- : listening on addr=/var/www/furima-39097/shared/tmp/sockets/unicorn.sock fd=9
+I, [2023-04-14T07:19:47.429100 #13097]  INFO -- : master process ready
+I, [2023-04-14T07:19:47.434364 #13105]  INFO -- : worker=0 ready
+I, [2023-04-14T07:19:47.620838 #13125]  INFO -- : executing ["/var/www/furima-39097/shared/bundle/ruby/2.6.0/bin/unicorn", "-c", "/var/www/furima-39097/current/config/unicorn.rb", "-E", "deployment", "-D", {9=>#<Kgio::UNIXServer:/var/www/furima-39097/shared/tmp/sockets/unicorn.sock>}] (in /var/www/furima-39097/releases/20230414071911)
+I, [2023-04-14T07:19:47.620939 #13125]  INFO -- : forked child re-executing...
+I, [2023-04-14T07:19:47.951395 #13125]  INFO -- : inherited addr=/var/www/furima-39097/shared/tmp/sockets/unicorn.sock fd=9
+I, [2023-04-14T07:19:47.951635 #13125]  INFO -- : Refreshing Gem list
+I, [2023-04-14T07:19:49.301758 #13125]  INFO -- : master process ready
+I, [2023-04-14T07:19:49.309382 #13183]  INFO -- : worker=0 ready
+I, [2023-04-14T07:19:49.395688 #13097]  INFO -- : reaped #<Process::Status: pid 13105 exit 0> worker=0
+I, [2023-04-14T07:19:49.395779 #13097]  INFO -- : master complete
+115.39.66.153 - - [14/Apr/2023:07:20:44 +0000] "GET / HTTP/1.0" 200 9041 0.0377
+135.125.246.110 - - [14/Apr/2023:07:22:01 +0000] "POST /404 HTTP/1.0" 404 1722 0.0111
+135.125.246.110 - - [14/Apr/2023:07:22:01 +0000] "GET /404 HTTP/1.0" 404 1722 0.0017
+71.136.232.229 - - [14/Apr/2023:07:35:00 +0000] "GET /404 HTTP/1.0" 404 1722 0.0015
+115.39.66.153 - - [14/Apr/2023:07:35:56 +0000] "GET / HTTP/1.0" 200 9041 0.0072

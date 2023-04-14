@@ -1,0 +1,132 @@
+D, [2023-04-14T06:31:46.753492 #8613] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[34mSELECT GET_LOCK('322894282425445395', 0)[0m
+D, [2023-04-14T06:31:46.778479 #8613] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2023-04-14T06:31:46.796188 #8613] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2023-04-14T06:31:46.801242 #8613] DEBUG -- :   [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('322894282425445395')[0m
+D, [2023-04-14T06:43:01.885956 #9928] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('322894282425445395', 0)[0m
+D, [2023-04-14T06:43:01.902026 #9928] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2023-04-14T06:43:01.907232 #9928] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2023-04-14T06:43:01.912033 #9928] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('322894282425445395')[0m
+D, [2023-04-14T07:06:18.276473 #11252] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('322894282425445395', 0)[0m
+D, [2023-04-14T07:06:18.298447 #11252] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2023-04-14T07:06:18.307677 #11252] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2023-04-14T07:06:18.323365 #11252] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('322894282425445395')[0m
+D, [2023-04-14T07:09:11.034433 #12113] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('322894282425445395', 0)[0m
+D, [2023-04-14T07:09:11.046912 #12113] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2023-04-14T07:09:11.052116 #12113] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2023-04-14T07:09:11.056779 #12113] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('322894282425445395')[0m
+D, [2023-04-14T07:19:44.694631 #13024] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('322894282425445395', 0)[0m
+D, [2023-04-14T07:19:44.708020 #13024] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+D, [2023-04-14T07:19:44.713188 #13024] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+D, [2023-04-14T07:19:44.717702 #13024] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('322894282425445395')[0m
+I, [2023-04-14T07:20:44.357630 #13183]  INFO -- : [1678739c-c2f8-4533-ba02-051ae2213197] Started GET "/" for 115.39.66.153 at 2023-04-14 07:20:44 +0000
+I, [2023-04-14T07:20:44.359582 #13183]  INFO -- : [1678739c-c2f8-4533-ba02-051ae2213197] Processing by ItemsController#index as HTML
+I, [2023-04-14T07:20:44.378052 #13183]  INFO -- : [1678739c-c2f8-4533-ba02-051ae2213197]   Rendering items/index.html.erb within layouts/application
+I, [2023-04-14T07:20:44.385876 #13183]  INFO -- : [1678739c-c2f8-4533-ba02-051ae2213197]   Rendered shared/_header.html.erb (Duration: 4.6ms | Allocations: 790)
+D, [2023-04-14T07:20:44.387490 #13183] DEBUG -- : [1678739c-c2f8-4533-ba02-051ae2213197]   [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY `items`.`created_at` DESC[0m
+I, [2023-04-14T07:20:44.389901 #13183]  INFO -- : [1678739c-c2f8-4533-ba02-051ae2213197]   Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 962)
+I, [2023-04-14T07:20:44.389981 #13183]  INFO -- : [1678739c-c2f8-4533-ba02-051ae2213197]   Rendered items/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 4431)
+I, [2023-04-14T07:20:44.392154 #13183]  INFO -- : [1678739c-c2f8-4533-ba02-051ae2213197] Completed 200 OK in 32ms (Views: 15.5ms | ActiveRecord: 4.2ms | Allocations: 8323)
+I, [2023-04-14T07:22:01.047321 #13183]  INFO -- : [ee48b3cb-2a32-4e7a-9b8e-06da52be8633] Started POST "/" for 135.125.246.110 at 2023-04-14 07:22:01 +0000
+F, [2023-04-14T07:22:01.048291 #13183] FATAL -- : [ee48b3cb-2a32-4e7a-9b8e-06da52be8633]   
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] ActionController::RoutingError (No route matches [POST] "/"):
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633]   
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:97:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] rack (2.2.6.4) lib/rack/tempfile_reaper.rb:15:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] rack (2.2.6.4) lib/rack/common_logger.rb:38:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] rack (2.2.6.4) lib/rack/chunked.rb:98:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] rack (2.2.6.4) lib/rack/content_length.rb:17:in `call'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] /var/www/furima-39097/shared/bundle/ruby/2.6.0/bin/unicorn:23:in `load'
+[ee48b3cb-2a32-4e7a-9b8e-06da52be8633] /var/www/furima-39097/shared/bundle/ruby/2.6.0/bin/unicorn:23:in `<main>'
+I, [2023-04-14T07:22:01.543631 #13183]  INFO -- : [6dabb138-2900-41d1-a61c-5ba6916af8a1] Started GET "/.env" for 135.125.246.110 at 2023-04-14 07:22:01 +0000
+F, [2023-04-14T07:22:01.544314 #13183] FATAL -- : [6dabb138-2900-41d1-a61c-5ba6916af8a1]   
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] ActionController::RoutingError (No route matches [GET] "/.env"):
+[6dabb138-2900-41d1-a61c-5ba6916af8a1]   
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:97:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] rack (2.2.6.4) lib/rack/tempfile_reaper.rb:15:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] rack (2.2.6.4) lib/rack/common_logger.rb:38:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] rack (2.2.6.4) lib/rack/chunked.rb:98:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] rack (2.2.6.4) lib/rack/content_length.rb:17:in `call'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] /var/www/furima-39097/shared/bundle/ruby/2.6.0/bin/unicorn:23:in `load'
+[6dabb138-2900-41d1-a61c-5ba6916af8a1] /var/www/furima-39097/shared/bundle/ruby/2.6.0/bin/unicorn:23:in `<main>'
+I, [2023-04-14T07:35:00.169086 #13183]  INFO -- : [e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] Started GET "/api/v1/contracts/active" for 71.136.232.229 at 2023-04-14 07:35:00 +0000
+F, [2023-04-14T07:35:00.169700 #13183] FATAL -- : [e987bda2-3b0e-4b17-86cd-72bf3bcba6ac]   
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] ActionController::RoutingError (No route matches [GET] "/api/v1/contracts/active"):
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac]   
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] rack (2.2.6.4) lib/rack/method_override.rb:24:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:97:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] rack (2.2.6.4) lib/rack/tempfile_reaper.rb:15:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] rack (2.2.6.4) lib/rack/common_logger.rb:38:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] rack (2.2.6.4) lib/rack/chunked.rb:98:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] rack (2.2.6.4) lib/rack/content_length.rb:17:in `call'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] unicorn (5.4.1) lib/unicorn/http_server.rb:606:in `process_client'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] unicorn (5.4.1) lib/unicorn/http_server.rb:701:in `worker_loop'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] unicorn (5.4.1) lib/unicorn/http_server.rb:549:in `spawn_missing_workers'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] unicorn (5.4.1) lib/unicorn/http_server.rb:142:in `start'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] unicorn (5.4.1) bin/unicorn:126:in `<top (required)>'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] /var/www/furima-39097/shared/bundle/ruby/2.6.0/bin/unicorn:23:in `load'
+[e987bda2-3b0e-4b17-86cd-72bf3bcba6ac] /var/www/furima-39097/shared/bundle/ruby/2.6.0/bin/unicorn:23:in `<main>'
+I, [2023-04-14T07:35:56.963699 #13183]  INFO -- : [3b45ed73-69bf-44e1-b12a-e3dac7771f08] Started GET "/" for 115.39.66.153 at 2023-04-14 07:35:56 +0000
+I, [2023-04-14T07:35:56.964389 #13183]  INFO -- : [3b45ed73-69bf-44e1-b12a-e3dac7771f08] Processing by ItemsController#index as HTML
+I, [2023-04-14T07:35:56.966157 #13183]  INFO -- : [3b45ed73-69bf-44e1-b12a-e3dac7771f08]   Rendering items/index.html.erb within layouts/application
+I, [2023-04-14T07:35:56.966893 #13183]  INFO -- : [3b45ed73-69bf-44e1-b12a-e3dac7771f08]   Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 380)
+D, [2023-04-14T07:35:56.968015 #13183] DEBUG -- : [3b45ed73-69bf-44e1-b12a-e3dac7771f08]   [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` ORDER BY `items`.`created_at` DESC[0m
+I, [2023-04-14T07:35:56.968893 #13183]  INFO -- : [3b45ed73-69bf-44e1-b12a-e3dac7771f08]   Rendered shared/_footer.html.erb (Duration: 0.4ms | Allocations: 536)
+I, [2023-04-14T07:35:56.968962 #13183]  INFO -- : [3b45ed73-69bf-44e1-b12a-e3dac7771f08]   Rendered items/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1990)
+I, [2023-04-14T07:35:56.969560 #13183]  INFO -- : [3b45ed73-69bf-44e1-b12a-e3dac7771f08] Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 2940)
